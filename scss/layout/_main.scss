@@ -85,7 +85,7 @@
   }
 
   .p-main-title.archive {
-    background-image: url(../img/mainvisual-three-burger.jpg);
+    background-image: url(../img/archive-humburger-tablet.jpg);
 
     h2 {
       font-size: 6rem;
@@ -133,13 +133,18 @@
   
     h2 {
       font-size: 4rem;
-      margin-left: per(86, 1553);
     }
   }
 
   .p-main-title.archive {
     display: flex;
     height: 23.9rem;
+    background-image: url(../img/mainvisual-three-burger.jpg);
+    background-position-y: -86rem;
+
+    h2 {
+      margin-left: per(86, 1553);
+    }
   }
 
   .p-burger-information {
@@ -148,5 +153,14 @@
       width: per(1353, 1553);
       padding-top: per(63, 1553);
     }
+  }
+}
+
+// archive_search
+
+.p-main-title.search {
+
+  h2 {
+    width: 20rem;
   }
 }
