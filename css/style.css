@@ -307,6 +307,7 @@ body {
     display: grid;
     grid-template-areas: "header sidebar" "main sidebar";
     grid-template-columns: 80.8854166667% 1fr;
+    grid-template-rows: auto 1fr;
   }
 }
 
@@ -596,6 +597,9 @@ body {
     display: block;
     font-size: 3.4rem;
     line-height: 142.6638763683px;
+  }
+  .l-sidebar.archive {
+    min-height: 245.5rem;
   }
   .c-sidebar-contents {
     padding-left: 12.5% h4;
@@ -924,6 +928,7 @@ body {
     background-color: white;
     margin: 8.875739645% auto;
     border-radius: 3.8rem;
+    cursor: pointer;
   }
 }
 .p-map-wrapper {
@@ -1056,5 +1061,41 @@ body {
     width: 73.3684210526%;
     padding: 6.1578947368% 0 7.8947368421%;
   }
+}
+.p-archive-pagination {
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  margin-bottom: 4.1210560206%;
+}
+.p-archive-pagination p {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #707070;
+}
+.p-archive-pagination .fa-thin.fa-angles-left,
+.p-archive-pagination .fa-thin.fa-angles-right {
+  font-size: 1.6rem;
+  margin-left: 1.9rem;
+}
+.p-archive-pagination .p-pagination-list {
+  display: flex;
+  list-style-type: none;
+}
+.p-archive-pagination .p-pagination-list li {
+  border: 0.1rem #707070 solid;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.6rem;
+  font-family: "Roboto";
+  color: #707070;
+  text-align: center;
+  margin-left: 1.5rem;
+}
+.p-archive-pagination .p-pagination-list li:nth-of-type(1) {
+  background-color: #3C2A10;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

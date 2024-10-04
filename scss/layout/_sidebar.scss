@@ -179,6 +179,10 @@
       line-height: calc((1021px / 1553px) * 217px);
     }
   }
+
+  .l-sidebar.archive {
+    min-height: 245.5rem;
+  }
   
   .c-sidebar-contents {
     padding-left: per(46, 368)

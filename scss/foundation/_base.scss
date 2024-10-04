@@ -38,5 +38,6 @@ body {
       "header sidebar"
       "main sidebar";
     grid-template-columns: per(1553, 1920) 1fr;
+    grid-template-rows: auto 1fr;
   }
 }

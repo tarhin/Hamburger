@@ -2,3 +2,45 @@
 @use '../../foundation/color' as *;
 @use '../../foundation/mixin' as *;
 
+.p-archive-pagination {
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  margin-bottom: per(64, 1553);
+
+  p {
+    font-family: "Roboto";
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color--gray;
+  }
+
+  .fa-thin.fa-angles-left,
+  .fa-thin.fa-angles-right {
+    font-size: 1.6rem;
+    margin-left: 1.9rem;
+  }
+
+  .p-pagination-list {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      border: .1rem $color--gray solid;
+      width: 3.5rem;
+      height: 3.5rem;
+      line-height: 3.5rem;
+      font-size: 1.6rem;
+      font-family: "Roboto";
+      color: $color--gray;
+      text-align: center;
+      margin-left: 1.5rem;
+    }
+
+    li:nth-of-type(1) {
+      background-color: $color--darkGray;
+      color:  white;
+    }
+  }
+}
+
