@@ -73,6 +73,69 @@
   }
 }
 
+// archive.html
+
+.p-burger-information-contents {
+  margin: per(19, 375) 0 per(62, 375);
+  width: per(335, 375);
+}
+
+.p-box--information-burger {
+  display: flex;
+  flex-direction: column;
+  height: 58.5rem;
+  margin-bottom: 2rem;
+  background-color: #3C2B1C;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 23rem;
+  }
+
+  .p-box-text-burger {
+    color: white;
+    font-family: "M PLUS 1p";
+    padding-left: per(17, 375);
+
+    h3 {
+      font-size: 2rem;
+      margin-top: 3.1rem;
+      line-height: 2.97rem;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+      margin-top: 2.1rem;
+      line-height: 2.37rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-top: .7rem;
+      width: 30.4rem;
+      line-height: 2.376rem;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $color--gray;
+      font-size: 1.6rem;
+      font-family: "M PLUS 1p";
+      font-weight: 700;
+      width: 16.3rem;
+      height: 4.2rem;
+      line-height: 4.2rem;
+      text-align: center;
+      background-color: white;
+      margin: 4rem auto 4.3rem;
+      border-radius: 2.1rem;
+      cursor: pointer;
+    }
+  }
+}
+
 @include breakpoint(tablet) {
   .p-box--information--wrapper {
     flex-direction: row;
@@ -119,55 +182,23 @@
 
   .p-box--information-burger {
     display: flex;
+    flex-direction: row;
     height: 35.4rem;
-    margin-bottom: per(20, 756);
-    background-color: #3C2B1C;
 
     img {
-      display: block;
       width: per(378, 756);
       height: 35.4rem;
     }
 
     .p-box-text-burger {
-      color: white;
-      font-family: "M PLUS 1p";
       padding-left: per(34, 756);
 
-      h3 {
-        font-size: 2rem;
-        margin-top: 3.1rem;
-        line-height: 2.97rem;
-      }
-
-      h4 {
-        font-size: 1.6rem;
-        margin-top: 2.1rem;
-        line-height: 2.37rem;
-      }
-
       p {
-        font-size: 1.6rem;
-        margin-top: .7rem;
         width: 28.4rem;
-        line-height: 2.376rem;
       }
 
       a {
-        display: block;
-        text-decoration: none;
-        color: $color--gray;
-        font-size: 1.6rem;
-        font-family: "M PLUS 1p";
-        font-weight: 700;
-        width: 16.3rem;
-        height: 4.2rem;
-        line-height: 4.2rem;
-        text-align: center;
-        background-color: white;
         margin: 4.5rem auto 4rem;
-        border-radius: 2.1rem;
-        cursor: pointer;
       }
     }
   }

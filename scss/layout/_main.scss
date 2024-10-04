@@ -21,8 +21,57 @@
 }
 
 .p-main-title.archive {
+  background-image: url(../img/archive-three-burger-sp.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 28.5rem;
+
   h2 {
     font-family: "Roboto";
+    font-size: 3.6rem;
+    width: 17rem;
+    margin-left: per(37, 375);
+  }
+
+  p {
+    font-family: "M PLUS 1p";
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    width: 11.2rem;
+    margin-top: 1.2rem;
+    margin-left: 3.7rem;
+  }
+}
+
+.p-main-title-bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.p-burger-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .p-burger-information-text {
+    width: per(335, 375);
+    font-family: "M PLUS 1p";
+    color: $color--darkGray;
+    padding-top: per(32, 375);
+
+    h3 {
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-top: 2.5rem;
+    }
   }
 }
 
@@ -37,9 +86,6 @@
 
   .p-main-title.archive {
     background-image: url(../img/mainvisual-three-burger.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 28.5rem;
 
     h2 {
       font-size: 6rem;
@@ -47,34 +93,22 @@
     }
 
     p {
-      font-family: "M PLUS 1p";
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: white;
-      width: 11.2rem;
+      margin-top: 0;
       margin-left: 1.9rem;
       padding-top: 1rem;
     }
   }
 
   .p-main-title-bg {
-    width: 100%;
-    height: 100%;
-    display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    background-color: rgba(0, 0, 0, .5);
   }
 
   .p-burger-information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     .p-burger-information-text {
       width: per(757, 834);
-      font-family: "M PLUS 1p";
-      color: $color--darkGray;
       padding-top: per(39, 834);
 
       h3 {
@@ -82,7 +116,6 @@
       }
 
       p {
-        font-size: 1.6rem;
         margin-top: 2rem;
       }
     }

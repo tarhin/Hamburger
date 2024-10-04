@@ -379,8 +379,54 @@ body {
   margin-left: 6.6666666667%;
 }
 
+.p-main-title.archive {
+  background-image: url(../img/archive-three-burger-sp.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 28.5rem;
+}
 .p-main-title.archive h2 {
   font-family: "Roboto";
+  font-size: 3.6rem;
+  width: 17rem;
+  margin-left: 9.8666666667%;
+}
+.p-main-title.archive p {
+  font-family: "M PLUS 1p";
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  width: 11.2rem;
+  margin-top: 1.2rem;
+  margin-left: 3.7rem;
+}
+
+.p-main-title-bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p-burger-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-burger-information .p-burger-information-text {
+  width: 89.3333333333%;
+  font-family: "M PLUS 1p";
+  color: #3C2A10;
+  padding-top: 8.5333333333%;
+}
+.p-burger-information .p-burger-information-text h3 {
+  font-size: 2.8rem;
+}
+.p-burger-information .p-burger-information-text p {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
 }
 
 @media (min-width: 600px) {
@@ -392,47 +438,29 @@ body {
   }
   .p-main-title.archive {
     background-image: url(../img/mainvisual-three-burger.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 28.5rem;
   }
   .p-main-title.archive h2 {
     font-size: 6rem;
     width: 17rem;
   }
   .p-main-title.archive p {
-    font-family: "M PLUS 1p";
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: white;
-    width: 11.2rem;
+    margin-top: 0;
     margin-left: 1.9rem;
     padding-top: 1rem;
   }
   .p-main-title-bg {
-    width: 100%;
-    height: 100%;
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .p-burger-information {
-    display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
   .p-burger-information .p-burger-information-text {
     width: 90.7673860911%;
-    font-family: "M PLUS 1p";
-    color: #3C2A10;
     padding-top: 4.6762589928%;
   }
   .p-burger-information .p-burger-information-text h3 {
     font-size: 3.6rem;
   }
   .p-burger-information .p-burger-information-text p {
-    font-size: 1.6rem;
     margin-top: 2rem;
   }
 }
@@ -806,6 +834,61 @@ body {
   display: none;
 }
 
+.p-burger-information-contents {
+  margin: 5.0666666667% 0 16.5333333333%;
+  width: 89.3333333333%;
+}
+
+.p-box--information-burger {
+  display: flex;
+  flex-direction: column;
+  height: 58.5rem;
+  margin-bottom: 2rem;
+  background-color: #3C2B1C;
+}
+.p-box--information-burger img {
+  display: block;
+  width: 100%;
+  height: 23rem;
+}
+.p-box--information-burger .p-box-text-burger {
+  color: white;
+  font-family: "M PLUS 1p";
+  padding-left: 4.5333333333%;
+}
+.p-box--information-burger .p-box-text-burger h3 {
+  font-size: 2rem;
+  margin-top: 3.1rem;
+  line-height: 2.97rem;
+}
+.p-box--information-burger .p-box-text-burger h4 {
+  font-size: 1.6rem;
+  margin-top: 2.1rem;
+  line-height: 2.37rem;
+}
+.p-box--information-burger .p-box-text-burger p {
+  font-size: 1.6rem;
+  margin-top: 0.7rem;
+  width: 30.4rem;
+  line-height: 2.376rem;
+}
+.p-box--information-burger .p-box-text-burger a {
+  display: block;
+  text-decoration: none;
+  color: #707070;
+  font-size: 1.6rem;
+  font-family: "M PLUS 1p";
+  font-weight: 700;
+  width: 16.3rem;
+  height: 4.2rem;
+  line-height: 4.2rem;
+  text-align: center;
+  background-color: white;
+  margin: 4rem auto 4.3rem;
+  border-radius: 2.1rem;
+  cursor: pointer;
+}
+
 @media (min-width: 600px) {
   .p-box--information--wrapper {
     flex-direction: row;
@@ -842,51 +925,21 @@ body {
   }
   .p-box--information-burger {
     display: flex;
+    flex-direction: row;
     height: 35.4rem;
-    margin-bottom: 2.6455026455%;
-    background-color: #3C2B1C;
   }
   .p-box--information-burger img {
-    display: block;
     width: 50%;
     height: 35.4rem;
   }
   .p-box--information-burger .p-box-text-burger {
-    color: white;
-    font-family: "M PLUS 1p";
     padding-left: 4.4973544974%;
   }
-  .p-box--information-burger .p-box-text-burger h3 {
-    font-size: 2rem;
-    margin-top: 3.1rem;
-    line-height: 2.97rem;
-  }
-  .p-box--information-burger .p-box-text-burger h4 {
-    font-size: 1.6rem;
-    margin-top: 2.1rem;
-    line-height: 2.37rem;
-  }
   .p-box--information-burger .p-box-text-burger p {
-    font-size: 1.6rem;
-    margin-top: 0.7rem;
     width: 28.4rem;
-    line-height: 2.376rem;
   }
   .p-box--information-burger .p-box-text-burger a {
-    display: block;
-    text-decoration: none;
-    color: #707070;
-    font-size: 1.6rem;
-    font-family: "M PLUS 1p";
-    font-weight: 700;
-    width: 16.3rem;
-    height: 4.2rem;
-    line-height: 4.2rem;
-    text-align: center;
-    background-color: white;
     margin: 4.5rem auto 4rem;
-    border-radius: 2.1rem;
-    cursor: pointer;
   }
 }
 @media (min-width: 1025px) {
@@ -1116,6 +1169,74 @@ body {
     padding: 6.1578947368% 0 7.8947368421%;
   }
 }
+.p-archive-pagination {
+  display: none;
+}
+.p-archive-pagination p {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #707070;
+}
+.p-archive-pagination .fa-thin.fa-angles-left,
+.p-archive-pagination .fa-thin.fa-angles-right {
+  font-size: 1.6rem;
+  margin-left: 1.9rem;
+}
+.p-archive-pagination .p-pagination-list {
+  display: flex;
+  list-style-type: none;
+}
+.p-archive-pagination .p-pagination-list li {
+  border: 0.1rem #707070 solid;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.6rem;
+  font-family: "Roboto";
+  color: #707070;
+  text-align: center;
+  margin-left: 1.5rem;
+}
+.p-archive-pagination .p-pagination-list li:nth-of-type(1) {
+  background-color: #3C2A10;
+  color: white;
+}
+
+.p-archive-pagination-sp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 89.0666666667%;
+  height: 2.2rem;
+  margin-bottom: 8%;
+}
+.p-archive-pagination-sp p {
+  font-family: "M PLUS 1p";
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #707070;
+}
+.p-archive-pagination-sp .fa-thin.fa-angles-left,
+.p-archive-pagination-sp .fa-thin.fa-angles-right {
+  font-size: 1.6rem;
+}
+
+.p-archive-pagination-sp-back,
+.p-archive-pagination-sp-next {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.p-archive-pagination-sp-back p {
+  margin-left: 0.8rem;
+}
+
+.p-archive-pagination-sp-next p {
+  margin-right: 0.8rem;
+}
+
 @media (min-width: 600px) {
   .p-archive-pagination {
     display: flex;
@@ -1152,6 +1273,9 @@ body {
   .p-archive-pagination .p-pagination-list li:nth-of-type(1) {
     background-color: #3C2A10;
     color: white;
+  }
+  .p-archive-pagination-sp {
+    display: none;
   }
 }
 @media (min-width: 1025px) {
