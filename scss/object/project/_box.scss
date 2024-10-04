@@ -109,6 +109,68 @@
       font-size: 1.4rem;
     }
   }
+
+  // archive.htmlスタイリング
+
+  .p-burger-information-contents {
+    margin: per(37, 834) 0 per(106, 834);
+    width: per(756, 834);
+  }
+
+  .p-box--information-burger {
+    display: flex;
+    height: 35.4rem;
+    margin-bottom: per(20, 756);
+    background-color: #3C2B1C;
+
+    img {
+      display: block;
+      width: per(378, 756);
+      height: 35.4rem;
+    }
+
+    .p-box-text-burger {
+      color: white;
+      font-family: "M PLUS 1p";
+      padding-left: per(34, 756);
+
+      h3 {
+        font-size: 2rem;
+        margin-top: 3.1rem;
+        line-height: 2.97rem;
+      }
+
+      h4 {
+        font-size: 1.6rem;
+        margin-top: 2.1rem;
+        line-height: 2.37rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        margin-top: .7rem;
+        width: 28.4rem;
+        line-height: 2.376rem;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: $color--gray;
+        font-size: 1.6rem;
+        font-family: "M PLUS 1p";
+        font-weight: 700;
+        width: 16.3rem;
+        height: 4.2rem;
+        line-height: 4.2rem;
+        text-align: center;
+        background-color: white;
+        margin: 4.5rem auto 4rem;
+        border-radius: 2.1rem;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 @include breakpoint(pc) {
@@ -191,20 +253,15 @@
   }
 
   .p-box--information-burger {
-    display: flex;
     height: 47.1rem;
     margin-bottom: per(30, 1553);
-    background-color: #3C2B1C;
 
     img {
-      display: block;
       width: per(677, 1553);
       height: 47.1rem;
     }
 
     .p-box-text-burger {
-      color: white;
-      font-family: "M PLUS 1p";
       padding-left: per(63, 1553);
 
       h3 {
@@ -220,27 +277,16 @@
       }
 
       p {
-        font-size: 1.6rem;
         margin-top: per(13, 676);
         width: per(509, 676);
-        line-height: 2.376rem;
       }
 
       a {
-        display: block;
-        text-decoration: none;
-        color: $color--gray;
-        font-size: 1.6rem;
-        font-family: "M PLUS 1p";
-        font-weight: 700;
         width: per(292, 676);
         height: 7.6rem;
         line-height: 7.6rem;
-        text-align: center;
-        background-color: white;
         margin: per(60, 676) auto;
         border-radius: 3.8rem;
-        cursor: pointer;
       }
     }
   }

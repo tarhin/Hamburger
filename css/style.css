@@ -390,38 +390,24 @@ body {
   .p-main-title h2 {
     margin-left: 10.3117505995%;
   }
-}
-@media (min-width: 1025px) {
-  .l-main {
-    grid-area: main;
-  }
-  .p-main-title {
-    height: 53rem;
-    background-image: url(../img/mainvisual-pc.jpg);
-  }
-  .p-main-title h2 {
-    font-size: 4rem;
-    margin-left: 5.5376690277%;
-  }
   .p-main-title.archive {
-    display: flex;
     background-image: url(../img/mainvisual-three-burger.jpg);
     background-size: cover;
     background-position: center;
-    height: 23.9rem;
+    height: 28.5rem;
   }
   .p-main-title.archive h2 {
     font-size: 6rem;
-    width: 10.9465550547%;
+    width: 17rem;
   }
   .p-main-title.archive p {
     font-family: "M PLUS 1p";
     font-size: 1.6rem;
     font-weight: 700;
     color: white;
-    margin-left: 1.2234385061%;
     width: 11.2rem;
-    padding-top: 0.6439150032%;
+    margin-left: 1.9rem;
+    padding-top: 1rem;
   }
   .p-main-title-bg {
     width: 100%;
@@ -437,17 +423,38 @@ body {
     align-items: center;
   }
   .p-burger-information .p-burger-information-text {
-    width: 87.1216999356%;
+    width: 90.7673860911%;
     font-family: "M PLUS 1p";
     color: #3C2A10;
-    padding-top: 4.0566645203%;
+    padding-top: 4.6762589928%;
   }
   .p-burger-information .p-burger-information-text h3 {
     font-size: 3.6rem;
   }
   .p-burger-information .p-burger-information-text p {
     font-size: 1.6rem;
-    margin-top: 1.2878300064%;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1025px) {
+  .l-main {
+    grid-area: main;
+  }
+  .p-main-title {
+    height: 53rem;
+    background-image: url(../img/mainvisual-pc.jpg);
+  }
+  .p-main-title h2 {
+    font-size: 4rem;
+    margin-left: 5.5376690277%;
+  }
+  .p-main-title.archive {
+    display: flex;
+    height: 23.9rem;
+  }
+  .p-burger-information .p-burger-information-text {
+    width: 87.1216999356%;
+    padding-top: 4.0566645203%;
   }
 }
 .p-sp-menu-background {
@@ -829,6 +836,58 @@ body {
     padding: 4.9230769231%;
     font-size: 1.4rem;
   }
+  .p-burger-information-contents {
+    margin: 4.4364508393% 0 12.7098321343%;
+    width: 90.6474820144%;
+  }
+  .p-box--information-burger {
+    display: flex;
+    height: 35.4rem;
+    margin-bottom: 2.6455026455%;
+    background-color: #3C2B1C;
+  }
+  .p-box--information-burger img {
+    display: block;
+    width: 50%;
+    height: 35.4rem;
+  }
+  .p-box--information-burger .p-box-text-burger {
+    color: white;
+    font-family: "M PLUS 1p";
+    padding-left: 4.4973544974%;
+  }
+  .p-box--information-burger .p-box-text-burger h3 {
+    font-size: 2rem;
+    margin-top: 3.1rem;
+    line-height: 2.97rem;
+  }
+  .p-box--information-burger .p-box-text-burger h4 {
+    font-size: 1.6rem;
+    margin-top: 2.1rem;
+    line-height: 2.37rem;
+  }
+  .p-box--information-burger .p-box-text-burger p {
+    font-size: 1.6rem;
+    margin-top: 0.7rem;
+    width: 28.4rem;
+    line-height: 2.376rem;
+  }
+  .p-box--information-burger .p-box-text-burger a {
+    display: block;
+    text-decoration: none;
+    color: #707070;
+    font-size: 1.6rem;
+    font-family: "M PLUS 1p";
+    font-weight: 700;
+    width: 16.3rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    text-align: center;
+    background-color: white;
+    margin: 4.5rem auto 4rem;
+    border-radius: 2.1rem;
+    cursor: pointer;
+  }
 }
 @media (min-width: 1025px) {
   .p-box--information--wrapper {
@@ -894,19 +953,14 @@ body {
     width: 87.1216999356%;
   }
   .p-box--information-burger {
-    display: flex;
     height: 47.1rem;
     margin-bottom: 1.9317450097%;
-    background-color: #3C2B1C;
   }
   .p-box--information-burger img {
-    display: block;
     width: 43.593045718%;
     height: 47.1rem;
   }
   .p-box--information-burger .p-box-text-burger {
-    color: white;
-    font-family: "M PLUS 1p";
     padding-left: 4.0566645203%;
   }
   .p-box--information-burger .p-box-text-burger h3 {
@@ -920,26 +974,15 @@ body {
     line-height: 3.564rem;
   }
   .p-box--information-burger .p-box-text-burger p {
-    font-size: 1.6rem;
     margin-top: 1.9230769231%;
     width: 75.2958579882%;
-    line-height: 2.376rem;
   }
   .p-box--information-burger .p-box-text-burger a {
-    display: block;
-    text-decoration: none;
-    color: #707070;
-    font-size: 1.6rem;
-    font-family: "M PLUS 1p";
-    font-weight: 700;
     width: 43.1952662722%;
     height: 7.6rem;
     line-height: 7.6rem;
-    text-align: center;
-    background-color: white;
     margin: 8.875739645% auto;
     border-radius: 3.8rem;
-    cursor: pointer;
   }
 }
 .p-map-wrapper {
@@ -1073,40 +1116,47 @@ body {
     padding: 6.1578947368% 0 7.8947368421%;
   }
 }
-.p-archive-pagination {
-  display: flex;
-  height: 3.5rem;
-  align-items: center;
-  margin-bottom: 4.1210560206%;
-}
-.p-archive-pagination p {
-  font-family: "Roboto";
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #707070;
-}
-.p-archive-pagination .fa-thin.fa-angles-left,
+@media (min-width: 600px) {
+  .p-archive-pagination {
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+    margin-bottom: 3.8369304556%;
+  }
+  .p-archive-pagination p {
+    font-family: "Roboto";
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #707070;
+  }
+  .p-archive-pagination .fa-thin.fa-angles-left,
 .p-archive-pagination .fa-thin.fa-angles-right {
-  font-size: 1.6rem;
-  margin-left: 1.9rem;
+    font-size: 1.6rem;
+    margin-left: 1.9rem;
+  }
+  .p-archive-pagination .p-pagination-list {
+    display: flex;
+    list-style-type: none;
+  }
+  .p-archive-pagination .p-pagination-list li {
+    border: 0.1rem #707070 solid;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.6rem;
+    font-family: "Roboto";
+    color: #707070;
+    text-align: center;
+    margin-left: 1.5rem;
+  }
+  .p-archive-pagination .p-pagination-list li:nth-of-type(1) {
+    background-color: #3C2A10;
+    color: white;
+  }
 }
-.p-archive-pagination .p-pagination-list {
-  display: flex;
-  list-style-type: none;
-}
-.p-archive-pagination .p-pagination-list li {
-  border: 0.1rem #707070 solid;
-  width: 3.5rem;
-  height: 3.5rem;
-  line-height: 3.5rem;
-  font-size: 1.6rem;
-  font-family: "Roboto";
-  color: #707070;
-  text-align: center;
-  margin-left: 1.5rem;
-}
-.p-archive-pagination .p-pagination-list li:nth-of-type(1) {
-  background-color: #3C2A10;
-  color: white;
+@media (min-width: 1025px) {
+  .p-archive-pagination {
+    margin-bottom: 4.1210560206%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,6 @@
     color: white;
     font-family: "M PLUS 1p";
     font-size: 3.6rem;
-    // line-height: 28.5rem;
     margin-left: per(25, 375);
   }
 }
@@ -35,34 +34,16 @@
       margin-left: per(86, 834);
     }
   }
-}
-
-@include breakpoint(pc) {
-  .l-main {
-    grid-area: main;
-  }
-  
-  .p-main-title {
-    height: calc(530px * (155.3rem / 1553px));
-    background-image: url(../img/mainvisual-pc.jpg);
-  
-    h2 {
-      font-size: 4rem;
-      // line-height: calc(530px * (155.3rem / 1553px));
-      margin-left: per(86, 1553);
-    }
-  }
 
   .p-main-title.archive {
-    display: flex;
     background-image: url(../img/mainvisual-three-burger.jpg);
     background-size: cover;
     background-position: center;
-    height: 23.9rem;
+    height: 28.5rem;
 
     h2 {
       font-size: 6rem;
-      width: per(170, 1553);
+      width: 17rem;
     }
 
     p {
@@ -70,10 +51,9 @@
       font-size: 1.6rem;
       font-weight: 700;
       color: white;
-      margin-left: per(19, 1553);
       width: 11.2rem;
-      padding-top: per(10, 1553);
-      
+      margin-left: 1.9rem;
+      padding-top: 1rem;
     }
   }
 
@@ -90,12 +70,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     .p-burger-information-text {
-      width: per(1353, 1553);
+      width: per(757, 834);
       font-family: "M PLUS 1p";
       color: $color--darkGray;
-      padding-top: per(63, 1553);
+      padding-top: per(39, 834);
 
       h3 {
         font-size: 3.6rem;
@@ -103,8 +83,37 @@
 
       p {
         font-size: 1.6rem;
-        margin-top: per(20, 1553);
+        margin-top: 2rem;
       }
+    }
+  }
+}
+
+@include breakpoint(pc) {
+  .l-main {
+    grid-area: main;
+  }
+  
+  .p-main-title {
+    height: calc(530px * (155.3rem / 1553px));
+    background-image: url(../img/mainvisual-pc.jpg);
+  
+    h2 {
+      font-size: 4rem;
+      margin-left: per(86, 1553);
+    }
+  }
+
+  .p-main-title.archive {
+    display: flex;
+    height: 23.9rem;
+  }
+
+  .p-burger-information {
+    
+    .p-burger-information-text {
+      width: per(1353, 1553);
+      padding-top: per(63, 1553);
     }
   }
 }
