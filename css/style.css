@@ -448,6 +448,9 @@ body {
     margin-left: 1.9rem;
     padding-top: 1rem;
   }
+  .p-main-title.search h2 {
+    width: 20rem;
+  }
   .p-main-title-bg {
     flex-direction: row;
     justify-content: flex-start;
@@ -489,10 +492,6 @@ body {
     padding-top: 4.0566645203%;
   }
 }
-.p-main-title.search h2 {
-  width: 20rem;
-}
-
 .p-sp-menu-background {
   width: 100%;
   height: 100vh;

@@ -99,6 +99,13 @@
     }
   }
 
+  .p-main-title.search {
+
+    h2 {
+      width: 20rem;
+    }
+  }
+
   .p-main-title-bg {
     flex-direction: row;
     justify-content: flex-start;
@@ -153,14 +160,5 @@
       width: per(1353, 1553);
       padding-top: per(63, 1553);
     }
-  }
-}
-
-// archive_search
-
-.p-main-title.search {
-
-  h2 {
-    width: 20rem;
   }
 }
