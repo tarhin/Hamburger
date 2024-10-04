@@ -54,12 +54,26 @@
   }
 
   .p-main-title.archive {
+    display: flex;
     background-image: url(../img/mainvisual-three-burger.jpg);
     background-size: cover;
     background-position: center;
     height: 23.9rem;
+
     h2 {
       font-size: 6rem;
+      width: per(170, 1553);
+    }
+
+    p {
+      font-family: "M PLUS 1p";
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: white;
+      margin-left: per(19, 1553);
+      width: 11.2rem;
+      padding-top: per(10, 1553);
+      
     }
   }
 
@@ -67,8 +81,8 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     background-color: rgba(0, 0, 0, .5);
   }
 
