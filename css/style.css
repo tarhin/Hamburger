@@ -1254,6 +1254,7 @@ body {
 .p-archive-pagination .fa-thin.fa-angles-right {
     font-size: 1.6rem;
     margin-left: 1.9rem;
+    cursor: pointer;
   }
   .p-archive-pagination .p-pagination-list {
     display: flex;
@@ -1269,6 +1270,7 @@ body {
     color: #707070;
     text-align: center;
     margin-left: 1.5rem;
+    cursor: pointer;
   }
   .p-archive-pagination .p-pagination-list li:nth-of-type(1) {
     background-color: #3C2A10;

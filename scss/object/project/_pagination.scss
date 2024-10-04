@@ -99,6 +99,7 @@
     .fa-thin.fa-angles-right {
       font-size: 1.6rem;
       margin-left: 1.9rem;
+      cursor: pointer;
     }
   
     .p-pagination-list {
@@ -115,6 +116,7 @@
         color: $color--gray;
         text-align: center;
         margin-left: 1.5rem;
+        cursor: pointer;
       }
   
       li:nth-of-type(1) {
