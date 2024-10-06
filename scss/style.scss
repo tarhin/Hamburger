@@ -34,4 +34,10 @@
 @forward "object/project/map";
 
 // アーカイブページネーション
-@forward "object/project/pagination"
+@forward "object/project/pagination";
+
+// sigleテーブル
+@forward "object/project/table";
+
+// single 画像グリッド
+@forward "object/project/grid";

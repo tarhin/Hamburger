@@ -75,6 +75,157 @@
   }
 }
 
+.p-main-title.single {
+  background: url(../img/single-cheeseburger-sp.jpg) center / cover;
+  height: 22.5rem;
+
+  h1 {
+    font-family: "M PLUS 1p";
+    font-size: 3.6rem;
+    margin-left: 2.6rem;
+    color: white;
+  }
+}
+
+.p-single-main-contents-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .p-main-headline {
+    font-family: "M PLUS 1p";
+    color: $color--darkGray;
+
+    h2 {
+      font-size: 2.8rem;
+      margin-top: 3.4rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      width: 33.5rem;
+      margin-top: 2.5rem;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      margin-top: 3.6rem;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      margin-top: 2.8rem;
+    }
+
+    h5 {
+      margin-top: 3.4rem;
+    }
+
+    h6 {
+      margin-top: 2.7rem;
+    }
+  }
+
+  article {
+    width: 33.5rem;
+  }
+
+  article > img {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .p-single-contents {
+    display: flex;
+    margin-top: 3rem;
+
+    img {
+      width: 14.4rem;
+      height: 8.9rem;
+    }
+
+    p {
+      width: 18.3rem;
+      color: $color--darkGray;
+      margin-left: 1rem;
+      font-family: "M PLUS 1p";
+      font-size: 1.6rem;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .p-single-contents:nth-of-type(2) {
+    flex-direction: row-reverse;
+
+    p {
+      margin: 0;
+      margin-right: 1rem;
+    }
+  }
+
+  img.p-single-image-center {
+    width: 26.7rem;
+    height: 16.6rem;
+    margin-top: 3rem;
+  }
+
+  .p-single-list {
+    width: 33.5rem;
+    margin-top: 3.3rem;
+
+    ol,
+    ul {
+      font-family: "M PLUS 1p";
+      font-size: 1.6rem;
+      color: $color--darkGray;
+      list-style-position: inside
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ol:nth-of-type(2),
+    ul:nth-of-type(2) {
+      margin: 1.7rem 0 1.7rem 1.8rem;
+    }
+
+    ul:nth-of-type(1) {
+      margin-top: 5.7rem;
+    }
+  }
+
+  .p-single-button-wrapper {
+    width: 33.5rem;
+    margin-top: 6rem;
+  }
+
+  .p-button.single {
+    width: 33.5rem;
+    padding: 2.9rem 0 2.8rem;
+    color: $color--darkGray;
+    border-radius: 2rem;
+  }
+
+  .p-single-bold {
+    width: 33.5rem;
+    color: $color--darkGray;
+    font-family: "M PLUS 1p";
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3.1rem;
+    margin-bottom: 6.9rem;
+  }
+}
+
 @include breakpoint(tablet) {
   .p-main-title {
     background-image: url(../img/mainvisual-pc.jpg);
@@ -135,21 +286,14 @@
     height: 50.5rem;
 
     h1 {
-      font-family: "M PLUS 1p";
       font-size: 6rem;
       margin-left: 8.6rem;
-      color: white;
     }
   }
 
   .p-single-main-contents-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     .p-main-headline {
-      font-family: "M PLUS 1p";
-      color: $color--darkGray;
 
       h2 {
         font-size: 3.6rem;
@@ -167,12 +311,6 @@
         margin-top: 6.3rem;
       }
 
-      h4,
-      h5,
-      h6 {
-        font-size: 2rem;
-      }
-
       h4 {
         margin-top: 5.6rem;
       }
@@ -186,34 +324,15 @@
       }
     }
 
-    .p-main-box--gray {
-      width: 71.4rem;
-      margin-top: 5.6rem;
-      background-color: #F5F5F5;
-      color: $color--darkGray;
-      font-size: 1.6rem;
-      font-family: "M PLUS 1p";
-    }
-
-    .p-main-box--gray.citation {
-      padding: per(50, 834) per(56,834) per(57, 834) per(50, 834);
-
-      p:nth-of-type(2) {
-        margin-top: 6rem;
-      }
-    }
-
     article {
       width: 71.4rem;
     }
 
     article > img {
-      width: 100%;
       margin-top: 6rem;
     }
 
     .p-single-contents {
-      display: flex;
       margin-top: 6rem;
 
       img {
@@ -223,15 +342,15 @@
 
       p {
         width: 38.7rem;
-        color: $color--darkGray;
         margin-left: 2.1rem;
-        font-family: "M PLUS 1p";
-        font-size: 1.6rem;
+
+        span {
+          display: inline;
+        }
       }
     }
 
     .p-single-contents:nth-of-type(2) {
-      flex-direction: row-reverse;
 
       p {
         margin: 0;
@@ -245,80 +364,14 @@
       margin-top: 6rem;
     }
 
-    .p-image-table {
-      display: grid;
-      width: 71.4rem;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      column-gap: 1.6rem;
-      row-gap: 2rem;
-      margin-top: 24.1rem;
-
-      img {
-        width: 34.9rem;
-      }
-    }
-
     .p-single-list {
       width: 71.4rem;
       margin-top: 6.1rem;
       margin-left: 5rem;
-
-      ol,
-      ul {
-        font-family: "M PLUS 1p";
-        font-size: 1.6rem;
-        color: $color--darkGray;
-        list-style-position: inside
-      }
-
-      ul {
-        list-style-type: none;
-      }
-
-      ol:nth-of-type(2),
-      ul:nth-of-type(2) {
-        margin: 1.7rem 0 1.7rem 1.8rem;
-      }
-
-      ul:nth-of-type(1) {
-        margin-top: 5.7rem;
-      }
-    }
-
-    .p-main-box--gray.code {
-      padding: per(50, 834) per(69,834) per(50, 834) per(50, 834);
-
-      p {
-        span {
-          margin-left: 1em;
-        }
-      }
-    }
-
-    table.p-single-table {
-      width: 71.4rem;
-      margin-top: 6rem;
-      border-collapse: collapse;
-      color: $color--darkGray;
-      background-color: white;
-      font-size: 1.6rem;
-      font-family: "M PLUS 1p";
-
-      td {
-        border: .1rem solid $color--gray;
-        height: 7.7rem;
-        padding-left: 3rem;
-      }
-
-      td:nth-of-type(1) {
-        width: 21.5rem;
-      }
     }
 
     .p-single-button-wrapper {
       width: 71.4rem;
-      margin-top: 6rem;
     }
 
     .p-button.single {
@@ -330,10 +383,6 @@
 
     .p-single-bold {
       width: 71.4rem;
-      color: $color--darkGray;
-      font-family: "M PLUS 1p";
-      font-size: 1.6rem;
-      font-weight: bold;
       margin-top: 6rem;
       margin-bottom: 14.9rem;
     }
@@ -406,15 +455,6 @@
        }
     }
 
-    .p-main-box--gray {
-      width: 135.3rem;
-      margin-top: 5.6rem;
-    }
-
-    .p-main-box--gray.citation {
-      padding: per(50, 1553) per(60,1553) per(47, 1553) per(50, 1553);
-    }
-
     article {
       width: 135.3rem;
     }
@@ -445,18 +485,6 @@
       height: auto;
     }
 
-    .p-image-table {
-      width: 135.3rem;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      gap: 2rem;
-      margin-top: 6rem;
-
-      img {
-        width: 43.8rem;
-      }
-    }
-
     .p-single-list {
       width: 135.3rem;
       margin-top: 5.4rem;
@@ -464,19 +492,6 @@
       ol:nth-of-type(2),
       ul:nth-of-type(2) {
         margin: 1.7rem 0 1.7rem 5rem;
-      }
-    }
-
-    .p-main-box--gray.code {
-      padding: per(50, 1553) per(60,1553) per(50, 1553) per(50, 1553);
-    }
-
-    table.p-single-table {
-      width: 135.3rem;
-      margin-top: 5rem;
-
-      td:nth-of-type(1) {
-        width: 42.9rem;
       }
     }
 

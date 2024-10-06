@@ -136,6 +136,35 @@
   }
 }
 
+// single.html
+
+.p-main-box--gray {
+  width: 33.5rem;
+  margin-top: 2.6rem;
+  background-color: #F5F5F5;
+  color: $color--darkGray;
+  font-size: 1.6rem;
+  font-family: "M PLUS 1p";
+}
+
+.p-main-box--gray.citation {
+  padding: per(30, 375) per(16, 375) per(27, 375) per(20, 375);
+
+  p:nth-of-type(2) {
+    margin-top: 1rem;
+  }
+}
+
+.p-main-box--gray.code {
+  padding: per(50, 375) per(59,375) per(50, 375) per(50, 375);
+
+  p {
+    span {
+      margin-left: 1em;
+    }
+  }
+}
+
 @include breakpoint(tablet) {
   .p-box--information--wrapper {
     flex-direction: row;
@@ -201,6 +230,25 @@
         margin: 4.5rem auto 4rem;
       }
     }
+  }
+
+  // single.html
+
+  .p-main-box--gray {
+    width: 71.4rem;
+    margin-top: 5.6rem;
+  }
+
+  .p-main-box--gray.citation {
+    padding: per(50, 834) per(56,834) per(57, 834) per(50, 834);
+
+    p:nth-of-type(2) {
+      margin-top: 6rem;
+    }
+  }
+
+  .p-main-box--gray.code {
+    padding: per(50, 834) per(69,834) per(50, 834) per(50, 834);
   }
 }
 
@@ -320,5 +368,20 @@
         border-radius: 3.8rem;
       }
     }
+  }
+
+  // single.html
+
+  .p-main-box--gray {
+    width: 135.3rem;
+    margin-top: 5.6rem;
+  }
+
+  .p-main-box--gray.citation {
+    padding: per(50, 1553) per(60,1553) per(47, 1553) per(50, 1553);
+  }
+
+  .p-main-box--gray.code {
+    padding: per(50, 1553) per(60,1553) per(50, 1553) per(50, 1553);
   }
 }
