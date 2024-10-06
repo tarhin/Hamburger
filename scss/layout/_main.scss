@@ -226,6 +226,20 @@
   }
 }
 
+// page.html
+
+.p-main-title.single {
+  background: url(../img/page-shop-about-sp.jpg) center / cover;
+  height: 22.5rem;
+
+  h1 {
+    font-family: "M PLUS 1p";
+    font-size: 3.6rem;
+    margin-left: 4.5rem;
+    color: white;
+  }
+}
+
 @include breakpoint(tablet) {
   .p-main-title {
     background-image: url(../img/mainvisual-pc.jpg);
@@ -386,7 +400,18 @@
       margin-top: 6rem;
       margin-bottom: 14.9rem;
     }
+  }
 
+  // page.html
+
+  .p-main-title.page {
+    background: url(../img/page-shop-about.jpg) center / cover;
+    height: 50.5rem;
+
+    h1 {
+      font-size: 6rem;
+      margin-left: 8.6rem;
+    }
   }
 
 }
