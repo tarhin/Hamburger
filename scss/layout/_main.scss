@@ -140,6 +140,7 @@
   
     h2 {
       font-size: 4rem;
+      margin-left: per(86, 1553);
     }
   }
 
@@ -154,11 +155,201 @@
     }
   }
 
+  .p-main-title.single {
+    background-image: url(../img/single-cheeseburger.jpg);
+    height: 50rem;
+
+    h1 {
+      font-family: "M PLUS 1p";
+      font-size: 6rem;
+      margin-left: per(86, 1553);
+      color: white;
+    }
+  }
+
   .p-burger-information {
     
     .p-burger-information-text {
       width: per(1353, 1553);
       padding-top: per(63, 1553);
+    }
+  }
+
+  .p-single-main-contents-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .p-main-headline {
+      font-family: "M PLUS 1p";
+      color: $color--darkGray;
+
+      h2 {
+        font-size: 3.6rem;
+        margin-top: 6.3rem;
+      }
+
+       p {
+        font-size: 1.6rem;
+        width: 135.3rem;
+        margin-top: 5.7rem;
+       }
+
+       h3 {
+        font-size: 2.8rem;
+        margin-top: 6rem;
+       }
+
+       h4,
+       h5,
+       h6 {
+        font-size: 2rem;
+        margin-top: 5.6rem;
+       }
+    }
+
+    .p-main-box--gray {
+      width: 135.3rem;
+      margin-top: 5.6rem;
+      padding: per(50, 1553) per(60,1553) per(50, 1553) per(50, 1553);
+      background-color: #F5F5F5;
+      color: $color--darkGray;
+      font-size: 1.6rem;
+      font-family: "M PLUS 1p";
+    }
+
+    .p-main-box--gray.citation {
+      padding: per(50, 1553) per(60,1553) per(47, 1553) per(50, 1553);
+
+      p:nth-of-type(2) {
+        margin-top: 6rem;
+      }
+    }
+
+    article {
+      width: 135.3rem;
+    }
+
+    article > img {
+      width: 100%;
+      margin-top: 6rem;
+    }
+
+    .p-single-contents {
+      display: flex;
+      margin-top: 6rem;
+
+      p {
+        width: 73.3rem;
+        color: $color--darkGray;
+        margin-left: 4rem;
+        font-family: "M PLUS 1p";
+        font-size: 1.6rem;
+      }
+    }
+
+    .p-single-contents:nth-of-type(2) {
+      flex-direction: row-reverse;
+
+      p {
+        margin: 0;
+        margin-right: 4rem;
+      }
+    }
+
+    img.p-single-image-center {
+      margin-top: 6rem;
+    }
+
+    .p-image-table {
+      display: grid;
+      width: 135.3rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-top: 6rem;
+
+      img {
+        width: 43.8rem;
+      }
+    }
+
+    .p-single-list {
+      width: 135.3rem;
+      margin-top: 5.4rem;
+      margin-left: 5rem;
+
+      ol,
+      ul {
+        font-family: "M PLUS 1p";
+        font-size: 1.6rem;
+        color: $color--darkGray;
+        list-style-position: inside
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      ol:nth-of-type(2),
+      ul:nth-of-type(2) {
+        margin: 1.7rem 0 1.7rem 5rem;
+      }
+
+      ul:nth-of-type(1) {
+        margin-top: 5.7rem;
+      }
+    }
+
+    .p-main-box--gray.code {
+      p {
+        span {
+          // display: inline-block;
+          margin-left: 1em;
+        }
+      }
+    }
+
+    table.p-single-table {
+      width: 135.3rem;
+      margin-top: 5rem;
+      border-collapse: collapse;
+      color: $color--darkGray;
+      background-color: white;
+      font-size: 1.6rem;
+      font-family: "M PLUS 1p";
+
+      td {
+        border: .1rem solid $color--gray;
+        height: 7.7rem;
+        padding-left: 3rem;
+      }
+
+      td:nth-of-type(1) {
+        width: 42.9rem;
+      }
+    }
+
+    .p-single-button-wrapper {
+      width: 135.3rem;
+      margin-top: 6rem;
+    }
+
+    .p-button.single {
+      width: per(429, 1353);
+      padding: 4.2rem 0 3.8rem;
+      color: $color--darkGray;
+      border-radius: 2rem;
+    }
+
+    .p-single-bold {
+      width: 135.3rem;
+      color: $color--darkGray;
+      font-family: "M PLUS 1p";
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-top: 6rem;
+      margin-bottom: 27.4rem;
     }
   }
 }

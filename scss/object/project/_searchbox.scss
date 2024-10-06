@@ -28,16 +28,19 @@
     font-size: 1.6rem;
   }
 
-  .p-search-button {
+  .p-button.search {
     width: per(90, 318);
-    font-family: "M PLUS 1p";
-    font-weight: bold;
-    font-size: 1.6rem;
-    background: linear-gradient(to right, $color--lightGray, $color--midiumGray);
-    color: $color--gray;
-    border: 1px solid $color--gray;
-    border-radius: 1rem;
   }
+}
+
+.p-button {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  font-size: 1.6rem;
+  background: linear-gradient(to right, $color--lightGray, $color--midiumGray);
+  color: $color--gray;
+  border: 1px solid $color--gray;
+  border-radius: 1rem;
 }
 
 @include breakpoint(tablet) {
@@ -50,7 +53,7 @@
       padding-left: per(50, 546)
     }
 
-    .p-search-button {
+    .p-button.search {
       width: per(136, 546);
     }
   }
@@ -67,7 +70,7 @@
       border-radius: 1rem;
     }
   
-    .p-search-button {
+    .p-button.search {
       width: per(136, 546);
     }
   }
