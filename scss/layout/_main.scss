@@ -127,6 +127,219 @@
       }
     }
   }
+
+  // single.html
+
+  .p-main-title.single {
+    background: url(../img/single-cheeseburger.jpg) center / cover;
+    height: 50.5rem;
+
+    h1 {
+      font-family: "M PLUS 1p";
+      font-size: 6rem;
+      margin-left: 8.6rem;
+      color: white;
+    }
+  }
+
+  .p-single-main-contents-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .p-main-headline {
+      font-family: "M PLUS 1p";
+      color: $color--darkGray;
+
+      h2 {
+        font-size: 3.6rem;
+        margin-top: 6rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        width: 71.4rem;
+        margin-top: 5.5rem;
+      }
+
+      h3 {
+        font-size: 2.8rem;
+        margin-top: 6.3rem;
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        margin-top: 5.6rem;
+      }
+
+      h5 {
+        margin-top: 7.3rem;
+      }
+
+      h6 {
+        margin-top: 5.7rem;
+      }
+    }
+
+    .p-main-box--gray {
+      width: 71.4rem;
+      margin-top: 5.6rem;
+      background-color: #F5F5F5;
+      color: $color--darkGray;
+      font-size: 1.6rem;
+      font-family: "M PLUS 1p";
+    }
+
+    .p-main-box--gray.citation {
+      padding: per(50, 834) per(56,834) per(57, 834) per(50, 834);
+
+      p:nth-of-type(2) {
+        margin-top: 6rem;
+      }
+    }
+
+    article {
+      width: 71.4rem;
+    }
+
+    article > img {
+      width: 100%;
+      margin-top: 6rem;
+    }
+
+    .p-single-contents {
+      display: flex;
+      margin-top: 6rem;
+
+      img {
+        width: 30.6rem;
+        height: 18.9rem;
+      }
+
+      p {
+        width: 38.7rem;
+        color: $color--darkGray;
+        margin-left: 2.1rem;
+        font-family: "M PLUS 1p";
+        font-size: 1.6rem;
+      }
+    }
+
+    .p-single-contents:nth-of-type(2) {
+      flex-direction: row-reverse;
+
+      p {
+        margin: 0;
+        margin-right: 2.1rem;
+      }
+    }
+
+    img.p-single-image-center {
+      width: 58.1rem;
+      height: 35.8rem;
+      margin-top: 6rem;
+    }
+
+    .p-image-table {
+      display: grid;
+      width: 71.4rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 1.6rem;
+      row-gap: 2rem;
+      margin-top: 24.1rem;
+
+      img {
+        width: 34.9rem;
+      }
+    }
+
+    .p-single-list {
+      width: 71.4rem;
+      margin-top: 6.1rem;
+      margin-left: 5rem;
+
+      ol,
+      ul {
+        font-family: "M PLUS 1p";
+        font-size: 1.6rem;
+        color: $color--darkGray;
+        list-style-position: inside
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      ol:nth-of-type(2),
+      ul:nth-of-type(2) {
+        margin: 1.7rem 0 1.7rem 1.8rem;
+      }
+
+      ul:nth-of-type(1) {
+        margin-top: 5.7rem;
+      }
+    }
+
+    .p-main-box--gray.code {
+      padding: per(50, 834) per(69,834) per(50, 834) per(50, 834);
+
+      p {
+        span {
+          margin-left: 1em;
+        }
+      }
+    }
+
+    table.p-single-table {
+      width: 71.4rem;
+      margin-top: 6rem;
+      border-collapse: collapse;
+      color: $color--darkGray;
+      background-color: white;
+      font-size: 1.6rem;
+      font-family: "M PLUS 1p";
+
+      td {
+        border: .1rem solid $color--gray;
+        height: 7.7rem;
+        padding-left: 3rem;
+      }
+
+      td:nth-of-type(1) {
+        width: 21.5rem;
+      }
+    }
+
+    .p-single-button-wrapper {
+      width: 71.4rem;
+      margin-top: 6rem;
+    }
+
+    .p-button.single {
+      width: 42.9rem;
+      padding: 4.2rem 0 3.8rem;
+      color: $color--darkGray;
+      border-radius: 2rem;
+    }
+
+    .p-single-bold {
+      width: 71.4rem;
+      color: $color--darkGray;
+      font-family: "M PLUS 1p";
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-top: 6rem;
+      margin-bottom: 14.9rem;
+    }
+
+  }
+
 }
 
 @include breakpoint(pc) {
@@ -155,18 +368,6 @@
     }
   }
 
-  .p-main-title.single {
-    background-image: url(../img/single-cheeseburger.jpg);
-    height: 50rem;
-
-    h1 {
-      font-family: "M PLUS 1p";
-      font-size: 6rem;
-      margin-left: per(86, 1553);
-      color: white;
-    }
-  }
-
   .p-burger-information {
     
     .p-burger-information-text {
@@ -175,35 +376,32 @@
     }
   }
 
+  // single.html
+
+  .p-main-title.single {
+    height: 50rem;
+  }
+
   .p-single-main-contents-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     .p-main-headline {
-      font-family: "M PLUS 1p";
-      color: $color--darkGray;
 
       h2 {
-        font-size: 3.6rem;
         margin-top: 6.3rem;
       }
 
        p {
-        font-size: 1.6rem;
         width: 135.3rem;
         margin-top: 5.7rem;
        }
 
        h3 {
-        font-size: 2.8rem;
         margin-top: 6rem;
        }
 
        h4,
        h5,
        h6 {
-        font-size: 2rem;
         margin-top: 5.6rem;
        }
     }
@@ -211,45 +409,30 @@
     .p-main-box--gray {
       width: 135.3rem;
       margin-top: 5.6rem;
-      padding: per(50, 1553) per(60,1553) per(50, 1553) per(50, 1553);
-      background-color: #F5F5F5;
-      color: $color--darkGray;
-      font-size: 1.6rem;
-      font-family: "M PLUS 1p";
     }
 
     .p-main-box--gray.citation {
       padding: per(50, 1553) per(60,1553) per(47, 1553) per(50, 1553);
-
-      p:nth-of-type(2) {
-        margin-top: 6rem;
-      }
     }
 
     article {
       width: 135.3rem;
     }
 
-    article > img {
-      width: 100%;
-      margin-top: 6rem;
-    }
-
     .p-single-contents {
-      display: flex;
-      margin-top: 6rem;
+
+      img {
+        width: auto;
+        height: auto;
+      }
 
       p {
         width: 73.3rem;
-        color: $color--darkGray;
         margin-left: 4rem;
-        font-family: "M PLUS 1p";
-        font-size: 1.6rem;
       }
     }
 
     .p-single-contents:nth-of-type(2) {
-      flex-direction: row-reverse;
 
       p {
         margin: 0;
@@ -258,11 +441,11 @@
     }
 
     img.p-single-image-center {
-      margin-top: 6rem;
+      width: auto;
+      height: auto;
     }
 
     .p-image-table {
-      display: grid;
       width: 135.3rem;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
@@ -277,53 +460,20 @@
     .p-single-list {
       width: 135.3rem;
       margin-top: 5.4rem;
-      margin-left: 5rem;
-
-      ol,
-      ul {
-        font-family: "M PLUS 1p";
-        font-size: 1.6rem;
-        color: $color--darkGray;
-        list-style-position: inside
-      }
-
-      ul {
-        list-style-type: none;
-      }
 
       ol:nth-of-type(2),
       ul:nth-of-type(2) {
         margin: 1.7rem 0 1.7rem 5rem;
       }
-
-      ul:nth-of-type(1) {
-        margin-top: 5.7rem;
-      }
     }
 
     .p-main-box--gray.code {
-      p {
-        span {
-          // display: inline-block;
-          margin-left: 1em;
-        }
-      }
+      padding: per(50, 1553) per(60,1553) per(50, 1553) per(50, 1553);
     }
 
     table.p-single-table {
       width: 135.3rem;
       margin-top: 5rem;
-      border-collapse: collapse;
-      color: $color--darkGray;
-      background-color: white;
-      font-size: 1.6rem;
-      font-family: "M PLUS 1p";
-
-      td {
-        border: .1rem solid $color--gray;
-        height: 7.7rem;
-        padding-left: 3rem;
-      }
 
       td:nth-of-type(1) {
         width: 42.9rem;
@@ -332,23 +482,10 @@
 
     .p-single-button-wrapper {
       width: 135.3rem;
-      margin-top: 6rem;
-    }
-
-    .p-button.single {
-      width: per(429, 1353);
-      padding: 4.2rem 0 3.8rem;
-      color: $color--darkGray;
-      border-radius: 2rem;
     }
 
     .p-single-bold {
       width: 135.3rem;
-      color: $color--darkGray;
-      font-family: "M PLUS 1p";
-      font-size: 1.6rem;
-      font-weight: bold;
-      margin-top: 6rem;
       margin-bottom: 27.4rem;
     }
   }
